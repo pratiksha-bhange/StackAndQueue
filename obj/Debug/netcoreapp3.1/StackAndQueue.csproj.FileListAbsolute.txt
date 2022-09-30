@@ -1,0 +1,13 @@
+D:\LFP 195\StackAndQueue\bin\Debug\netcoreapp3.1\StackAndQueue.exe
+D:\LFP 195\StackAndQueue\bin\Debug\netcoreapp3.1\StackAndQueue.deps.json
+D:\LFP 195\StackAndQueue\bin\Debug\netcoreapp3.1\StackAndQueue.runtimeconfig.json
+D:\LFP 195\StackAndQueue\bin\Debug\netcoreapp3.1\StackAndQueue.runtimeconfig.dev.json
+D:\LFP 195\StackAndQueue\bin\Debug\netcoreapp3.1\StackAndQueue.dll
+D:\LFP 195\StackAndQueue\bin\Debug\netcoreapp3.1\StackAndQueue.pdb
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.GeneratedMSBuildEditorConfig.editorconfig
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.AssemblyInfoInputs.cache
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.AssemblyInfo.cs
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.csproj.CoreCompileInputs.cache
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.dll
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.pdb
+D:\LFP 195\StackAndQueue\obj\Debug\netcoreapp3.1\StackAndQueue.genruntimeconfig.cache

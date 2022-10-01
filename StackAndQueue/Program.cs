@@ -17,10 +17,18 @@ namespace StackAndQueue
 
             stackUsingLinkList.Peak();
             stackUsingLinkList.Display();
+
             stackUsingLinkList.POP();
             stackUsingLinkList.Display();
+
             stackUsingLinkList.IsEmpty();
             stackUsingLinkList.Display();
+
+            QueueUsingLinkList queueUsingLinkList = new QueueUsingLinkList();
+            queueUsingLinkList.Enqueue(56);
+            queueUsingLinkList.Enqueue(30);
+            queueUsingLinkList.Enqueue(70);
+            queueUsingLinkList.Display();
         }
     }
     

@@ -30,7 +30,7 @@ namespace StackAndQueue
             queueUsingLinkList.Enqueue(70);
             queueUsingLinkList.Display();
 
-            Console.WriteLine("\nAfter Deque remaining elements is = ");
+            Console.WriteLine("\nAfter Dequeue remaining elements is = ");
             queueUsingLinkList.Dequeue();
             queueUsingLinkList.Display();
         }

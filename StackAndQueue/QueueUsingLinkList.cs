@@ -8,7 +8,7 @@ namespace StackAndQueue
     {
         Node head = null;
 
-        /// Enqueues methode to add the specified data in queue 
+        // Enqueues methode to add the specified data in queue
         internal void Enqueue(int data)
         {
             Node node = new Node(data);
@@ -25,10 +25,23 @@ namespace StackAndQueue
                 }
                 temp.next = node;
             }
-            Console.WriteLine("\ninserted into queue " + node.data);
+            Console.WriteLine("\ninserted into queue = " + node.data);
         }
 
-        /// Displays this elements in queue
+        // Dequeues this element from stack.
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+        }
+
+        // Displays this elements in queue
         internal void Display()
         {
             Node temp = this.head;

@@ -7,64 +7,53 @@ namespace Stacks_And_Queues
 {
     class StackUsingLinkList
     {
-        public Node top;
+        Node head = null;
 
-        //Parameterized constructor to Initializes a new instance of the class
-        public StackUsingLinkList()
+        // Enqueues methode to add the specified data in queue
+        internal void Enqueue(int data)
         {
-            this.top = null;
-        }
-        //Pushes the specified value into stack
-        internal void Push(int value)
-        {
-            Node node = new Node(value);
-            if (this.top == null)
+            Node node = new Node(data);
+            if (head == null)
             {
-                node.next = null;
+                this.head = node;
             }
             else
             {
-                node.next = this.top;
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
             }
-            this.top = node;
-            Console.WriteLine(value);
+            Console.WriteLine("\ninserted into queue = " + node.data);
         }
-        // Peak methode return the top element in stack
-        internal void Peak()
+
+        /// Dequeues this element from stack.
+        internal void Dequeue()
         {
-            if (this.top == null)
+            if (this.head == null)
             {
-                Console.WriteLine("stack is empty");
+                Console.WriteLine("Queue is empty");
             }
-            Console.WriteLine("\n is in the top of stack = " + this.top.data);
-        }
-        // Pop methode remove and return the top element
-        internal void POP()
-        {
-            if (this.top == null)
+            else
             {
-                Console.WriteLine("stack is empty \n deletion is not possible");
+                head = head.next;
             }
-            Console.WriteLine("\n POP out elememnt is = " + this.top.data);
-            this.top = this.top.next;
         }
-        // Determines whether this stack is empty or not
-        internal void IsEmpty()
-        {
-            while (this.top != null)
-            {
-                Peak();
-                POP();
-            }
-            Console.WriteLine("Stack is empty");
-        }
-        // Displays this instance
+
+        // Displays this elements in queue
         internal void Display()
         {
-            Node temp = this.top;
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
             while (temp != null)
             {
-                Console.WriteLine("elements in stack = " + temp.data);
+                Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }
         }
